@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>todolist</title>
+	<link rel="stylesheet" type="text/css" href="css/todolist.css">
+</head>
+<body>
+	<div class="todolist">
+		<div class="top">
+			<div>
+				<span>ToDolist</span>
+				<input type="text" placeholder="添加ToDo" required="required" autocomplete="off" id="text">
+			</div>
+		</div>
+		<div class="content">
+			<div class="todo title" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<span>正在进行</span>
+				<span>0</span>
+			</div>
+			<div class="done title" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<span>已经完成</span>
+				<span>0</span>
+			</div>
+		</div>
+	</div>
+	<script src="js/todolist.js"></script>
+</body>
+</html>
